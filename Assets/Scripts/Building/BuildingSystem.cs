@@ -10,6 +10,8 @@ public class BuildingSystem : MonoBehaviour
     private Vector3 pos;
     private RaycastHit hit;
     [SerializeField] private LayerMask layerMask;
+    [SerializeField] private Camera mainCamera;
+
     public float gridSize;
 
     private void Update()
@@ -40,12 +42,13 @@ public class BuildingSystem : MonoBehaviour
 
     private void FixedUpdate()
     {
-        Ray ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            Vector3 mouseWorldPosition = mainCamera.ScreenToWorldPoint(Input.mousePosition);
+            mouseWorldPosition.z = 0f;
+            transform.position = mouseWorldPosition;
 
-        if(Physics.Raycast(ray, out hit, 1000, layerMask))
-        {
-            pos = hit.point;
-        }
+            pos = mouseWorldPosition;
+
+        
     }
 
     public void SelectObject(int index)
