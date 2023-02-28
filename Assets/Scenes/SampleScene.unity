@@ -2208,11 +2208,13 @@ MonoBehaviour:
   - {fileID: 8032469411475473299, guid: c1730790bbbac9045bf1894c6e852180, type: 3}
   - {fileID: 8032469411475473299, guid: c1730790bbbac9045bf1894c6e852180, type: 3}
   - {fileID: 8032469411475473299, guid: c1730790bbbac9045bf1894c6e852180, type: 3}
+  pendingObject: {fileID: 8032469411475473299, guid: c1730790bbbac9045bf1894c6e852180, type: 3}
   layerMask:
     serializedVersion: 2
     m_Bits: 8
   mainCamera: {fileID: 519420031}
-  gridSize: 2
+  gridSize: 1
+  canPlace: 1
 --- !u!4 &1011849965
 Transform:
   m_ObjectHideFlags: 0
