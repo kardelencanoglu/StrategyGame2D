@@ -38,11 +38,11 @@ public class PathfindingDebugStepVisual : MonoBehaviour {
 
     private void Update() {
         if (Input.GetKeyDown(KeyCode.Space)) {
-            ShowNextSnapshot();
+          //  ShowNextSnapshot();
         }
 
         if (Input.GetKeyDown(KeyCode.Return)) {
-            autoShowSnapshots = true;
+           // autoShowSnapshots = true;
         }
 
         if (autoShowSnapshots) {
