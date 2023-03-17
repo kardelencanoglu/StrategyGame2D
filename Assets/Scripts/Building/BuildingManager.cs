@@ -3,7 +3,7 @@ using System.Collections.Generic;
 using UnityEngine.UI;
 using UnityEngine;
 using Unity.VisualScripting;
-using CodeMonkey.Utils;
+using Utils;
 
 public class BuildingManager : MonoBehaviour
 {

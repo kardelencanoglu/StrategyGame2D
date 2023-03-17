@@ -1,8 +1,7 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using CodeMonkey.Utils;
-using CodeMonkey;
+using Utils;
 using System;
 
 public class Testing : MonoBehaviour {
